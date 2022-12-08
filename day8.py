@@ -42,15 +42,11 @@ for r in tools.rng(inp_r_l):
             grid[-(c+1)][r] = 1
             vis_l = inp[-(c+1)][r]
 
-for l in grid:
-    print(l)
-
 total = sum(map(sum,grid))
 print(total)
 
 # part 2
 total_2 = 0
-print(inp_r_l)
 for r in tools.rng(inp_l):
     for c in tools.rng(inp_r_l):
         up = 0
